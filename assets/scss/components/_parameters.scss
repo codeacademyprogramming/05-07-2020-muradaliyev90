@@ -1,0 +1,15 @@
+.justify-center{
+    @include justify-content-center;
+}
+
+.align-center{
+    @include align-items-center;
+}
+
+.justify-space-between{
+    @include justify-space-between;
+}
+
+.align-space-between{
+    @include align-space-between;
+}

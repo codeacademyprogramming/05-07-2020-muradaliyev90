@@ -1,0 +1,25 @@
+.row{
+    margin: 0 -#{$gutter-width};
+    &::after{
+        content: "";
+        clear: both;
+    }
+}
+
+div[class^="col"] {
+    float: left;
+    padding: 0 #{$gutter-width};
+    box-sizing: border-box;
+}
+
+@for $col-size from 1 through $col-count {
+    .col-#{$col-size}{
+        width: calc((100% / #{col-count}) * #{$col-size});
+    }
+}
+
+@for $col-offset from 1 through $col-count {
+    .off-set-#{$col-offset}{
+        margin-left: calc((100% / #{col-count}) * #{$col-offset});
+    }
+}
